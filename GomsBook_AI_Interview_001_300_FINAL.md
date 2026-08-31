@@ -2160,7 +2160,7 @@ Relevancy, NO_ANSWER 등을 분리 평가할 수 있습니다. 연구 단계에�
 ### 핵심 수식
 
 $$
-\mathrm{Recall@K}=\frac{\#\{\text{relevant items in Top-K}\}}{\#\{\text{all relevant items}\}}
+\mathrm{Recall@K}=\frac{\mathrm{Relevant\ items\ in\ Top\text{-}K}}{\mathrm{All\ relevant\ items}}
 $$
 
 ### 면접 핵심
@@ -2199,7 +2199,7 @@ Top-K 중 실제 관련 문서의 비율입니다. 면접에서는 이 정의에
 ### 핵심 수식
 
 $$
-\mathrm{Precision@K}=\frac{\#\{\text{relevant items in Top-K}\}}{K}
+\mathrm{Precision@K}=\frac{\mathrm{Relevant\ items\ in\ Top\text{-}K}}{K}
 $$
 
 ### 면접 핵심
