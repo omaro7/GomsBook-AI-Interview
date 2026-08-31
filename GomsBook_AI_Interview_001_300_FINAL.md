@@ -432,7 +432,7 @@ Softmax는 Logit의 상대적 크기를 확률로 바꿉니다. 수치 안정성
 ### 핵심 수식
 
 $$
-\operatorname{softmax}(z_i)=\frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
+\mathrm{softmax}(z_i)=\frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
 $$
 
 ### 면접 핵심
@@ -1325,7 +1325,7 @@ $$
 ### 핵심 수식
 
 $$
-\operatorname{Cov}(X,Y)=E[(X-\mu_X)(Y-\mu_Y)]
+\mathrm{Cov}(X,Y)=E[(X-\mu_X)(Y-\mu_Y)]
 $$
 
 ### 면접 핵심
@@ -1357,7 +1357,7 @@ $$
 ### 핵심 수식
 
 $$
-\rho_{X,Y}=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}
+\rho_{X,Y}=\frac{\mathrm{Cov}(X,Y)}{\sigma_X\sigma_Y}
 $$
 
 ### 면접 핵심
@@ -1732,7 +1732,7 @@ Value를 가중합합니다. √d_k로 나누는 이유는 차원이 커질수�
 ### 핵심 수식
 
 $$
-\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\mathrm{Attention}(Q,K,V)=\mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
 흐름: `Q,K,V 생성 → QK^T score → Scaling → Softmax → V 가중합`
@@ -2238,7 +2238,7 @@ Retrieval → Top-K/Reranking → Context Expansion → LLM Answer 흐름으로
 ### 핵심 수식
 
 $$
-\mathrm{MRR}=\frac{1}{|Q|}\sum_{q\in Q}\frac{1}{\operatorname{rank}_q}
+\mathrm{MRR}=\frac{1}{|Q|}\sum_{q\in Q}\frac{1}{\mathrm{rank}_q}
 $$
 
 ### 면접 핵심
@@ -6983,7 +6983,7 @@ Top-K에 없으면 Retrieval Failure이고, 근거가 있는데도 답변이 틀
 ### 핵심 수식
 
 $$
-\mathrm{RRF}(d)=\sum_r\frac{1}{k+\operatorname{rank}_r(d)}
+\mathrm{RRF}(d)=\sum_r\frac{1}{k+\mathrm{rank}_r(d)}
 $$
 
 ### 면접 핵심
@@ -7355,7 +7355,7 @@ Parameter-Efficient Fine-Tuning 방법입니다. 면접에서는 이 정의에 �
 ### 핵심 수식
 
 $$
-W'=W+\Delta W,\qquad \Delta W=BA,\qquad \operatorname{rank}(BA)\le r
+W'=W+\Delta W,\qquad \Delta W=BA,\qquad \mathrm{rank}(BA)\le r
 $$
 
 ### 면접 핵심
@@ -9416,7 +9416,7 @@ Optimizer, Learning Rate Schedule, Gradient Clipping이 서로 보완적으로
 ### 핵심 수식
 
 $$
-\operatorname{Var}(W)\approx\frac{2}{fan_{in}+fan_{out}}
+\mathrm{Var}(W)\approx\frac{2}{fan_{in}+fan_{out}}
 $$
 
 ### 면접 핵심
@@ -9451,7 +9451,7 @@ Optimizer, Learning Rate Schedule, Gradient Clipping이 서로 보완적으로
 ### 핵심 수식
 
 $$
-\operatorname{Var}(W)\approx\frac{2}{fan_{in}}
+\mathrm{Var}(W)\approx\frac{2}{fan_{in}}
 $$
 
 ### 면접 핵심
